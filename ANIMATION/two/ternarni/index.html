@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="info"></h1>
+    <script>
+        function ucitajLoginContent(){
+            document.getElementById('info').innerHTML="Nisi logovan uloguj se...";
+        }
+
+        function ucitajAppContent(){
+            document.getElementById('info').innerHTML="Ispravno si unio username and password";
+        }
+
+        let unos = prompt('Unesi lozinku');
+        //let authenticated = unos === "admin";
+        /*if(authenticated){
+            ucitajAppContent();
+        }else{
+             ucitajLoginContent();
+        }*/
+        unos === "admin" ? ucitajAppContent(): ucitajLoginContent();
+    </script>
+</body>
+</html>

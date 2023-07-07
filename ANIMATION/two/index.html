@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="prazan"></p>
+    <script type="module">
+      import { tip, marka, godiste, model } from "./car.js";
+      document.getElementById(
+        "prazan"
+      ).innerHTML = `${tip} marke ${marka} proizvedeno ${godiste} modela ${model} vozi Armin`;
+    </script>
+  </body>
+</html>
