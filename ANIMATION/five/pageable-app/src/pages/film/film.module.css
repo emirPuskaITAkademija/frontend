@@ -1,7 +1,45 @@
-.bigmovie{
-    color: black;
-    background-color: aliceblue;
-    padding: 40px;
-    font-family: sans-serif;
-    text-align: center;
+.bigmovie {
+  color: black;
+  background-color: aliceblue;
+  padding: 40px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  border: 1px solid black;
+  padding: 8px;
+}
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+}
+
+.pagination a.active {
+  background-color: #4caf50;
+  color: white;
+  border: 1px solid #4caf50;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+.paginationButton {
+  margin-top: 10px;
+  background-color: #ffffff;
+  color: rgb(34, 32, 32);
+  padding: 15px 25px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
 }
